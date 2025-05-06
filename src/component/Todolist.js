@@ -24,7 +24,7 @@ const Todolist = ({ todos }) => {
                     const isCompleted = completedTodos.includes(index);
                     
                     return (
-                        <li  key={index} style={{ textDecoration: isCompleted ? 'line-through' : 'none' }}>abhay
+                        <li  key={index} style={{ textDecoration: isCompleted ? 'line-through' : 'none' }}>
                             {todo} 
                            <span>                           <button onClick={() => handleComplete(index)}>
                                 <MdCheck className='correct'/>
