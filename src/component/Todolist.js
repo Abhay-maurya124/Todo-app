@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdCheck, MdDelete, MdOutlineFilter3 } from "react-icons/md";
+import { MdCheck, MdDelete } from "react-icons/md";
 import { useState } from 'react';
 
 const Todolist = ({ todos }) => {
@@ -26,8 +26,7 @@ const Todolist = ({ todos }) => {
                     return (
                         <li  key={index} style={{ textDecoration: isCompleted ? 'line-through' : 'none' }}>abhay
                             {todo} 
-                           <span>
-                           <button onClick={() => handleComplete(index)}>
+                           <span>                           <button onClick={() => handleComplete(index)}>
                                 <MdCheck className='correct'/>
                             </button>
                             <button onClick={() => handleDelete(index)}>
